@@ -19,6 +19,6 @@ return {
       },
       auto_clean_after_session_restore = true
     })
-    vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+    vim.cmd([[nnoremap \ :Neotree toggle<cr>]])
   end,
 }
