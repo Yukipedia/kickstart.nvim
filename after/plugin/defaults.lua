@@ -10,7 +10,10 @@ opt.list = true
 opt.listchars:append "space:⋅"
 -- opt.listchars:append "eol:↴"
 
-vim.o.shell = "pwsh.exe"
+-- Windows OS only
+if vim.loop.os_uname().sysname == "Windows_NT" then
+  vim.o.shell = "pwsh.exe"
+end
 vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 --[[mappings]]
