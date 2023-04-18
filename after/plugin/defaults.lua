@@ -6,10 +6,6 @@ opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldenable = false
 
-opt.list = true
-opt.listchars:append "space:⋅"
--- opt.listchars:append "eol:↴"
-
 -- Windows OS only
 if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.o.shell = "pwsh.exe"
