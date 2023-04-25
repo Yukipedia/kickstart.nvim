@@ -37,3 +37,8 @@ vim.keymap.set("n", "<A-h>", "<C-\\><C-N><C-w>h")
 vim.keymap.set("n", "<A-j>", "<C-\\><C-N><C-w>j")
 vim.keymap.set("n", "<A-k>", "<C-\\><C-N><C-w>k")
 vim.keymap.set("n", "<A-l>", "<C-\\><C-N><C-w>l")
+
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
+    pattern = { "*" },
+    command = "normal zx zR",
+})
